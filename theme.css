@@ -1,0 +1,38 @@
+body,
+yt-formatted-string,
+h1,
+h2,
+h3,
+span {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif !important;
+}
+ytd-rich-item-renderer, 
+ytd-rich-grid-slim-media {
+  background: rgba(255, 255, 255, 0.00) !important; 
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  
+  /* Thick crisp wireframe border */
+  border: 2.5px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 14px;
+  overflow: hidden;
+  box-sizing: border-box !important;
+  transform: scale(0.70); 
+  margin: 16px 10px !important; 
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+ytd-rich-item-renderer #details {
+  opacity: 0.40 !important;
+  transition: opacity 0.25s ease !important;
+}
+ytd-rich-item-renderer:hover,
+ytd-rich-grid-slim-media:hover {
+  transform: scale(0.75) translateY(-3px); 
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.85) !important; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+ytd-rich-item-renderer:hover #details {
+  opacity: 1.0 !important;
+}
